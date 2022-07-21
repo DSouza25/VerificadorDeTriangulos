@@ -168,7 +168,7 @@ public class TriangulosVerify extends javax.swing.JFrame {
         int a = sR1.getValue();
         int b = sR2.getValue();
         int c = sR3.getValue();
-        if ((a==0)||(b==0)||(c==0)){
+        if (a>b+c || b>a+c || c>a+b){
             lblRes.setText("Não forma um triângulo");
         }else if (a==b){
             if (a==c){
